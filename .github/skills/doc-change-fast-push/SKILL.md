@@ -1,6 +1,6 @@
 ---
 name: doc-change-fast-push
-description: "Create, update, or delete documentation files and push them immediately to the default branch while preventing regressions and avoiding non-documentation commits. Use for docs-only hotfixes, policy updates, and workflow notes."
+description: "Create, update, or delete documentation files and push them immediately to the default branch while preventing regressions and avoiding non-documentation commits. Use for docs-only hotfixes, policy updates, and workflow notes. Also enforce step-by-step development flow, explicit user testing guidance, and regression-first fixing before moving forward."
 argument-hint: "What documentation change should be made and pushed?"
 user-invocable: true
 ---
@@ -59,3 +59,16 @@ Produce a safe documentation-only change, validate that no non-doc files are inc
 - Only documentation files are in the commit.
 - Changes are pushed to `master`.
 - Final response summarizes files changed and push result.
+
+## Step-By-Step Development Protocol
+Apply this collaboration loop for ongoing project work:
+
+1. Work in small, sequential increments.
+2. After each meaningful increment, ask the user to test before proceeding.
+3. Provide test guidance with:
+  - what to run,
+  - what to verify,
+  - expected outcome.
+4. If any issue or regression is found by either the user or the agent, stop forward work and fix it first.
+5. Resume next increment only after the fix is validated.
+6. Repeat this loop until project completion.
