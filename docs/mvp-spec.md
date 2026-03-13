@@ -219,7 +219,20 @@ Each run must output a deterministic package folder:
 ## 12. Implementation Order (Recommended)
 1. Define internal data models for each document type.
 2. Implement deterministic ID/date/amount generators.
-3. Implement linkage engine and constraint validator.
-4. Implement scenario injectors by category.
-5. Implement renderers and manifest writers.
-6. Add regression tests for seed reproducibility and linkage expectations.
+3. Implement variation planner (layout, labels, date formats, ID display patterns).
+4. Implement linkage engine and constraint validator.
+5. Implement scenario injectors by category.
+6. Implement renderers and manifest writers.
+7. Add regression tests for seed reproducibility, diversity thresholds, and linkage expectations.
+
+## 13. Non-Repetitive Output Strategy (MVP)
+To prevent repetitive invoice and supporting evidence templates, the generator must separate:
+- Canonical truth values (IDs, dates, amounts, parties, linkage keys).
+- Presentation variation values (layout family, labels, date format display, reference text style).
+
+MVP requires deterministic variation selection using the request seed so that:
+- Same seed produces identical variation choices.
+- Different seeds produce meaningfully different document presentations.
+
+Variation policy details and matrix are defined in:
+- docs/variation-strategy.md
