@@ -153,6 +153,12 @@ Completed in Increment 2 (User-Verified):
 - Exposed linkage summary path and consistency result in CLI and UI completion feedback.
 - Verified linkage summary generation and consistency status in runtime output.
 
+Completed in Increment 3 (User-Verified):
+- Added configurable linkage rule profiles in plan rendering: `strict`, `relaxed`, and `mismatch_injection`.
+- Added CLI support for linkage profile selection via `--linkage-mode`.
+- Added UI linkage mode control and included selected mode in completion feedback.
+- Verified linkage profile behavior and runtime output for selected modes.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -188,9 +194,9 @@ Pending:
 
 ## 8. Immediate Next Implementation Steps
 1. Extend composition rules for advanced interleaving patterns across multiple entities.
-2. Add configurable linkage rule profiles (strict, relaxed, mismatch-injection) in plan execution.
-3. Keep per-document PDF outputs and manifests synchronized for QA validation.
-4. Add UI indicators for consistency failures with direct guidance per offending link key.
+2. Keep per-document PDF outputs and manifests synchronized for QA validation.
+3. Add UI indicators for consistency failures with direct guidance per offending link key.
+4. Add actionable linkage issue summaries (grouped by link key/entity) in output manifest.
 5. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
 
 ## 9. Project Direction Lock
