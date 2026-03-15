@@ -190,6 +190,12 @@ Completed in Increment 8 (User-Verified):
 - Included selected issue-filter mode in completion feedback for clearer QA traceability.
 - Verified filtered guidance behavior in UI flow.
 
+Completed in Increment 9 (User-Verified):
+- Added a Phase 1B starter quick plan builder with non-technical form controls.
+- Added one-click quick-plan generation that populates valid plan JSON in the editor.
+- Kept generated quick-plan payload aligned to schema validation and PDF generation flow.
+- Verified quick-plan apply, validate, and generate flow.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -226,8 +232,8 @@ Pending:
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
 2. Add export-friendly summary views for inconsistency triage in QA runs.
-3. Start Phase 1B form-based plan builder UX with non-technical controls that can populate plan JSON.
-4. Expand form builder coverage to multi-document and interleaving-heavy cases after initial slice is user-verified.
+3. Expand form builder coverage to multi-document and interleaving-heavy cases.
+4. Add additional non-technical controls to capture common linkage variants without manual JSON edits.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
