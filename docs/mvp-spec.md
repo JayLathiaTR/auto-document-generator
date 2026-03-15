@@ -147,6 +147,12 @@ Completed in Increment 1 (User-Verified):
 - Added first composition orchestration slice that combines plan-ordered pages into one merged package PDF.
 - Kept per-document PDF outputs alongside merged package output for QA workflows.
 
+Completed in Increment 2 (User-Verified):
+- Added `plan-linkage-summary.json` output for page-level mapping and linkage metadata.
+- Added entity-level link consistency checks across rendered pages and merged output context.
+- Exposed linkage summary path and consistency result in CLI and UI completion feedback.
+- Verified linkage summary generation and consistency status in runtime output.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -181,10 +187,10 @@ Pending:
 7. Packaged executable runs this flow without technical setup.
 
 ## 8. Immediate Next Implementation Steps
-1. Add page-composition orchestrator for user-defined page ranges and interleaving.
-2. Keep per-document PDF outputs and manifests synchronized for QA validation.
-3. Add stronger page-level linkage consistency checks across merged outputs.
-4. Add linkage summary metadata for merged package outputs.
+1. Extend composition rules for advanced interleaving patterns across multiple entities.
+2. Add configurable linkage rule profiles (strict, relaxed, mismatch-injection) in plan execution.
+3. Keep per-document PDF outputs and manifests synchronized for QA validation.
+4. Add UI indicators for consistency failures with direct guidance per offending link key.
 5. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
 
 ## 9. Project Direction Lock
