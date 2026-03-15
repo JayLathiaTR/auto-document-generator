@@ -202,6 +202,11 @@ Completed in Increment 10 (User-Verified):
 - Kept interleaved payload schema-valid and compatible with validate/generate flow.
 - Verified interleaved apply, validate, and generate flow.
 
+Completed in Increment 11 (User-Verified):
+- Added quick-builder linkage variants for `consistent_links` and `consistency_conflict`.
+- Enabled non-technical users to generate either stable-link or intentional-conflict plans from form controls.
+- Verified both linkage variants through end-to-end UI generation flow.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -238,8 +243,8 @@ Pending:
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
 2. Add export-friendly summary views for inconsistency triage in QA runs.
-3. Add additional non-technical controls to capture common linkage variants without manual JSON edits.
-4. Extend quick-builder templates for more audit scenarios after linkage-variant controls are verified.
+3. Simplify UX by collapsing non-essential controls into an advanced section by default.
+4. Extend quick-builder templates for more audit scenarios after UX simplification is user-verified.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
