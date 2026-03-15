@@ -95,6 +95,12 @@ Completed in Increment 1 (User-Verified):
 - Added interleaved plan example at `examples/document-plan-interleaved.json`.
 - Added stdin safety guard so `--plan-stdin` and `--request-stdin` fail fast with guidance when no input is piped.
 
+Completed in Increment 2 (User-Verified):
+- Added UI Document Plan panel for page-composition JSON editing and validation.
+- Added `Validate Plan` and `Load Example Plan` actions in desktop UI.
+- Added clear plan-valid and plan-invalid user feedback flow in UI status/output.
+- Added simplified launch convenience script (`run_app.ps1`) and verified launch path options.
+
 Deliverables:
 - New plan schema for page-level composition.
 - UI controls for:
@@ -147,9 +153,9 @@ Pending:
 7. Packaged executable runs this flow without technical setup.
 
 ## 8. Immediate Next Implementation Steps
-1. Connect UI to collect and validate the new document plan.
-2. Build first PDF renderer vertical slice (invoice + shipping + bank statement basic templates).
-3. Add page-composition orchestrator for user-defined page ranges and interleaving.
+1. Build first PDF renderer vertical slice (invoice + shipping + bank statement basic templates).
+2. Add page-composition orchestrator for user-defined page ranges and interleaving.
+3. Bind validated Document Plan UI input to the PDF rendering pipeline.
 4. Generate one end-to-end PDF package from UI configuration.
 
 ## 9. Project Direction Lock
