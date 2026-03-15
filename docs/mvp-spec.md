@@ -177,6 +177,13 @@ Completed in Increment 6 (User-Verified):
 - Added recommended actions per grouped issue to speed QA triage.
 - Verified grouped summary payload content in generated output manifest.
 
+Completed in Increment 7 (User-Verified):
+- Added summary-level severity tags in `plan-linkage-summary.json` under `severity_summary`.
+- Added per-group severity labels in actionable issue sections for faster QA triage.
+- Exposed overall issue severity in CLI render output (`issue_severity`).
+- Surfaced issue severity in UI completion feedback.
+- Verified severity payload and runtime behavior in mismatch injection mode.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -213,9 +220,8 @@ Pending:
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
 2. Add export-friendly summary views for inconsistency triage in QA runs.
-3. Add summary-level severity tags to improve QA filtering/reporting.
-4. Add UI quick filters for mismatch-only versus true consistency conflicts.
-5. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
+3. Add UI quick filters for mismatch-only versus true consistency conflicts.
+4. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
