@@ -86,8 +86,8 @@ Completed items:
 Note:
 - This phase outputs structured data and manifests, not final PDF business documents.
 
-### Phase 1: Document Plan Schema + UI Plan Builder (In Progress)
-Status: In Progress
+### Phase 1A: JSON-Based Document Plan Foundation (Completed)
+Status: Completed
 
 Completed in Increment 1 (User-Verified):
 - Added `GenerationPlan` schema for page-level composition with coverage and overlap validation.
@@ -101,12 +101,19 @@ Completed in Increment 2 (User-Verified):
 - Added clear plan-valid and plan-invalid user feedback flow in UI status/output.
 - Added simplified launch convenience script (`run_app.ps1`) and verified launch path options.
 
-Deliverables:
-- New plan schema for page-level composition.
-- UI controls for:
+### Phase 1B: Form-Based Plan Builder UX (Deferred)
+Status: Deferred
+
+Planned deliverables:
+- Non-technical form controls for:
   - total documents,
   - per-document page definitions,
   - interleaving and linkage constraints.
+- Reduced need for raw JSON editing in day-to-day QA usage.
+
+Sequencing note:
+- Phase 1B is intentionally deferred until after a usable Phase 2 PDF rendering slice exists.
+- This allows end-to-end value delivery earlier (real PDF generation), then UX hardening on top.
 
 ### Phase 2: PDF Rendering Layer (Pending)
 Status: Pending
@@ -157,6 +164,7 @@ Pending:
 2. Add page-composition orchestrator for user-defined page ranges and interleaving.
 3. Bind validated Document Plan UI input to the PDF rendering pipeline.
 4. Generate one end-to-end PDF package from UI configuration.
+5. Return to Phase 1B form-based plan builder UX after Phase 2 slice is user-verified.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
