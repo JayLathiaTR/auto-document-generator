@@ -207,6 +207,16 @@ Completed in Increment 11 (User-Verified):
 - Enabled non-technical users to generate either stable-link or intentional-conflict plans from form controls.
 - Verified both linkage variants through end-to-end UI generation flow.
 
+Completed in Increment 12 (User-Verified):
+- Added collapsible advanced options so non-essential controls are hidden by default.
+- Fixed advanced-section toggle layout placement to keep controls above the plan section.
+- Verified advanced-section toggle behavior in runtime UI flow.
+
+Completed in Increment 13 (User-Verified):
+- Added a developer-input collapse for export-focused top fields to reduce default UI noise.
+- Kept developer/debug configuration available via explicit toggle while preserving current architecture support.
+- Verified simplified default top section and toggle behavior.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -243,8 +253,8 @@ Pending:
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
 2. Add export-friendly summary views for inconsistency triage in QA runs.
-3. Simplify UX by collapsing non-essential controls into an advanced section by default.
-4. Extend quick-builder templates for more audit scenarios after UX simplification is user-verified.
+3. Add a one-click layman flow that runs quick plan apply + validate + PDF generation.
+4. Continue refining separation between debug/developer controls and future end-user UI mode.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
