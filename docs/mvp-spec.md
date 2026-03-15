@@ -165,6 +165,12 @@ Completed in Increment 4 (User-Verified):
 - Added UI composition mode control and completion feedback for selected strategy.
 - Verified runtime output and merged generation behavior for selected composition mode.
 
+Completed in Increment 5 (User-Verified):
+- Added UI consistency-failure guidance with actionable hints per offending linkage key/entity.
+- Added mismatch-injection guidance to direct users to strict or relaxed linkage mode.
+- Surfaced guidance directly in completion feedback when consistency issues are present.
+- Verified guidance rendering and runtime behavior in mismatch injection mode.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -200,9 +206,9 @@ Pending:
 
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
-2. Add UI indicators for consistency failures with direct guidance per offending link key.
-3. Add actionable linkage issue summaries (grouped by link key/entity) in output manifest.
-4. Add export-friendly summary views for inconsistency triage in QA runs.
+2. Add actionable linkage issue summaries (grouped by link key/entity) in output manifest.
+3. Add export-friendly summary views for inconsistency triage in QA runs.
+4. Add summary-level severity tags to improve QA filtering/reporting.
 5. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
 
 ## 9. Project Direction Lock
