@@ -171,6 +171,12 @@ Completed in Increment 5 (User-Verified):
 - Surfaced guidance directly in completion feedback when consistency issues are present.
 - Verified guidance rendering and runtime behavior in mismatch injection mode.
 
+Completed in Increment 6 (User-Verified):
+- Added actionable grouped linkage issue summaries in `plan-linkage-summary.json`.
+- Added grouped sections for inconsistent values and injected mismatches by link key.
+- Added recommended actions per grouped issue to speed QA triage.
+- Verified grouped summary payload content in generated output manifest.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -206,9 +212,9 @@ Pending:
 
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
-2. Add actionable linkage issue summaries (grouped by link key/entity) in output manifest.
-3. Add export-friendly summary views for inconsistency triage in QA runs.
-4. Add summary-level severity tags to improve QA filtering/reporting.
+2. Add export-friendly summary views for inconsistency triage in QA runs.
+3. Add summary-level severity tags to improve QA filtering/reporting.
+4. Add UI quick filters for mismatch-only versus true consistency conflicts.
 5. Return to Phase 1B form-based plan builder UX after Phase 2 and Phase 3 slices are user-verified.
 
 ## 9. Project Direction Lock
