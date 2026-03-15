@@ -223,6 +223,11 @@ Completed in Increment 14 (User-Verified):
 - Reused existing plan-apply and PDF-generation paths to keep output behavior consistent.
 - Verified end-to-end generation without manual step-by-step button sequence.
 
+Completed in Increment 15 (User-Verified):
+- Hid `Run Export` from the default action row.
+- Kept `Run Export` available only when developer export inputs are explicitly shown.
+- Verified developer-action visibility behavior through UI toggles.
+
 Deliverables:
 - Map plan blocks to rendered pages.
 - Merge ordered pages into final PDFs per configured document.
@@ -259,8 +264,8 @@ Pending:
 ## 8. Immediate Next Implementation Steps
 1. Keep per-document PDF outputs and manifests synchronized for QA validation.
 2. Add export-friendly summary views for inconsistency triage in QA runs.
-3. Continue refining separation between debug/developer controls and future end-user UI mode.
-4. Move remaining developer-only actions out of the default primary flow.
+3. Continue refining separation between debug/developer controls and future end-user UI mode with bundled UI simplification slices.
+4. Move remaining developer-only actions and editor surfaces out of the default primary flow.
 
 ## 9. Project Direction Lock
 This document supersedes earlier interpretations that focused on JSON-only generation as the end product.
